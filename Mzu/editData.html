@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>编辑资料</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+	<!--上传图片-->
+	<div class="head-portrait">
+		<div class="pic-01"><img src="images/user-img.png" /></div>
+	    <div class="pic-up  icon-uniE921" >
+	    	<input type="file" id="" class="upload"/>
+	    </div>
+	</div>
+	<div class="datum-box datum-box-editdata">
+		<form action="" method="post" name="form" id="myForm" class="input-group register-group edit-group">
+			<ul class="datum-list">
+				<li class="dropdown">
+					<h1 data-toggle="dropdown" class="vtitle"><b>基本资料</b><span class="icon-uniE926 icon-23"></span></h1>
+					<div class="dropdown-menu show">
+						<ul class="input-row  input-placeholder">
+							<li>
+								<label>姓名</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>姓别</label>
+								<input type="text" class="input-clear" placeholder="请输入公司名称">
+							</li>
+							<li>
+								<label>籍贯</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称">
+							</li>
+							<li>
+								<label>出生年月</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称">
+							</li>
+							<li>
+								<label>会内职务</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称">
+							</li>
+							<li>
+								<label>政治面貌</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称">
+							</li>
+							<li>
+								<label>兴趣爱好</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称"> 
+							</li>
+						</ul>
+					</div>
+				</li> 
+				<li class="dropdown">
+					<h1 data-toggle="dropdown" class="vtitle"><b>采购背景</b><span class="icon-uniE926 icon-23"></span></h1>
+					<div class="dropdown-menu  show">
+                    	<ul class="input-row input-placeholder">
+                        	<li>
+								<label>采购年限</label>
+								<input  type="text" class="input-clear" placeholder="请输入职业名称">
+							</li>
+							<li>
+								<label>熟悉行业</label>
+								<div class="input-row input-placeholder-cg" onclick="showAss();return false;">
+									<div class="Firm-btn-box guild-box">
+										<div class="btn">农业类</div>
+										<div class="btn">科技类</div>
+										<div class="btn">农业类</div>
+										<div class="btn">科技类</div>
+										<div class="btn">农业类</div>
+									</div>
+									<i class="icon-uniE926"></i>
+								</div>
+								<div id="select-association" class="select-association">
+									<div id="submit" class="select-association-foot" onclick="hideAss();return false;">确定</div>
+									<ul class="datum-list select-association-list">
+										<li class="dropdown">
+											<h1 data-toggle="dropdown" class="vtitle"><b>旅游&nbsp;&nbsp;餐饮&nbsp;&nbsp;娱乐&nbsp;&nbsp;休闲&nbsp;&nbsp;购物</b><span class="icon-uniE926 icon-23"></span></h1>
+											<div class="dropdown-menu show">
+												<input type="checkbox" class="checkbox-la" name="hy" value="佛山协会" id="check-3" hidden onClick="return checkDate()"><label for="check-3" class="icon-btn__2">浴场</label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="广州协会" id="check-4" hidden onClick="return checkDate()"><label for="check-4" class="icon-btn__2">休闲娱乐</label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="中山协会" id="check-5" hidden onClick="return checkDate()"><label for="check-5" class="icon-btn__2">旅游、宾馆</label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-6" hidden onClick="return checkDate()"><label for="check-6" class="icon-btn__2">餐饮 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-7" hidden onClick="return checkDate()"><label for="check-7" class="icon-btn__2">体育、休闲运动 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-8" hidden onClick="return checkDate()"><label for="check-8" class="icon-btn__2">宠物、花鸟 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-9" hidden onClick="return checkDate()"><label for="check-9" class="icon-btn__2">文化艺术 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-10" hidden onClick="return checkDate()"><label for="check-10" class="icon-btn__2">购物 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-11" hidden onClick="return checkDate()"><label for="check-11" class="icon-btn__2">体育、文娱用品 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-12" hidden onClick="return checkDate()"><label for="check-12" class="icon-btn__2">酒店、厨房设备用品</label>
+											</div>
+										</li>
+										<li class="dropdown">
+											<h1 data-toggle="dropdown" class="vtitle"><b>机械设备&nbsp;&nbsp;通用零部件</b><span class="icon-uniE926"></span></h1>
+											<div class="dropdown-menu">
+												<input type="checkbox" class="checkbox-la" name="hy" value="佛山协会" id="check-13" hidden onClick="return checkDate()"><label for="check-13" class="icon-btn__2">锅炉 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="广州协会" id="check-14" hidden onClick="return checkDate()"><label for="check-14" class="icon-btn__2">机床</label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="中山协会" id="check-15" hidden onClick="return checkDate()"><label for="check-15" class="icon-btn__2">机械机器设备馆</label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-16" hidden onClick="return checkDate()"><label for="check-16" class="icon-btn__2">通用机械设备 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-17" hidden onClick="return checkDate()"><label for="check-17" class="icon-btn__2">专用机械设备 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-18" hidden onClick="return checkDate()"><label for="check-18" class="icon-btn__2">泵业 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-19" hidden onClick="return checkDate()"><label for="check-19" class="icon-btn__2">动力、节能设备 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-20" hidden onClick="return checkDate()"><label for="check-20" class="icon-btn__2">热力工程设备 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-21" hidden onClick="return checkDate()"><label for="check-21" class="icon-btn__2">机电设备 </label>
+												<input type="checkbox" class="checkbox-la" name="hy" value="茂名协会" id="check-22" hidden onClick="return checkDate()"><label for="check-22" class="icon-btn__2">通用零部件业</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<label>熟悉物料</label>
+								<div class="input-row input-placeholder-cg">
+									<i class="icon-uniE926"></i>
+								</div>
+							</li>
+							<li>
+								<label>资格证书</label>
+								<div class="input-row">
+									<div class="zs-up">
+										<input type="file" id="" name="browse" style="display:none;"/>
+		            					<a href="javascript:fn_browse();">
+		            						<img src="images/add.png"  />
+		            					</a>
+									</div>
+								</div>
+							</li>     		
+           				</ul>
+          			</div>  
+          		</li>   
+                <li class="dropdown">
+					<h1 data-toggle="dropdown" class="vtitle"><b>工作背景</b><span class="icon-uniE926 icon-23"></span></h1>
+					<div class="dropdown-menu show">
+						<ul class="input-row input-placeholder">
+							<li>
+								<label>任职企业</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>职位</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>年采购额</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>		
+						</ul> 
+					</div>
+				</li>
+                       
+				<li class="dropdown">
+					<h1 data-toggle="dropdown" class="vtitle"><b>联系方式</b><span class="icon-uniE926 icon-23"></span></h1>
+					<div class="dropdown-menu   show">
+						<ul class="input-row input-placeholder">
+							<li>
+								<label>电话</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>微信</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>在线邮箱</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名">
+							</li>
+							<li>
+								<label>目前地址</label>
+								<input  type="text" class="input-clear" placeholder="请输入姓名" />
+							</li>	
+						</ul>  
+						</div>
+					</li>
+			</ul>
+		</form>  
+	</div>
+                        
+	<div class="button-save">
+		<div class="btn-save">
+			<a href="javascript:submit()">
+				<i class="icon-uniE911 icon-save"></i>
+			    <span>保存</span>
+			</a>
+		</div>
+	</div>
+	<a href="javascript:submit()" class="btn-save">
+		<i class="icon-uniE911 icon-save"></i>
+	    <span>保存</span>
+	</a>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+/*注册选择协会时的显示隐藏*/
+function showAss() {
+    if (document.getElementById('select-association').style.display == 'none')
+        document.getElementById('select-association').style.display = 'block';
+    else
+        document.getElementById('select-association').style.display = 'block'
+}
+
+var submit = document.getElementById("submit");
+submit.onclick = function(){
+	if (document.getElementById('select-association').style.display == 'block')
+        document.getElementById('select-association').style.display = 'none';
+}
+</script>
+<script type="text/javascript" > 
+function  checkDate(){ 
+  	var checkedCount=0; 
+  	for(var i=0;i<myForm.hy.length ;i ++){ 
+
+	    if(myForm.hy[i].checked){ 
+	    	checkedCount++; 
+	    } 
+    } 
+    if(checkedCount>5){ 
+  
+  		alert("只能选取5个以内行业"); 
+  
+        return false;  
+    } 
+} 
+</script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+

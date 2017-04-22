@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>新增供应需求</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+	<!-- 新增供求 supplyFor-->
+	<div class="supplyFor">
+		<form class="input-group register-group">
+			<div class="input-row">
+				<label>主题</label>
+				<input type="text" name="text" placeholder="请输入供求主题" required>
+			</div>
+			<div class="input-row">
+				<label>采购类型</label>
+				<div class="supply-radio group-T">
+					<input name="radio1" type="radio" class="radio-la" id="c-1" hidden>
+					<label class="group-T-l icon-uniE940" for="c-1">采购</label>
+					<input name="radio1" type="radio" class="radio-la" id="c-2" hidden>
+					<label class="group-T-l icon-uniE940" for="c-2">销售</label>
+				</div>
+			</div>
+			<div class="input-row">
+				<label>名称</label>
+				<input type="text" name="text" placeholder="产品名称" required>
+			</div>
+			<div class="input-row">
+				<label>数量/重量</label>
+				<input type="text" name="text" placeholder="填写数量/重量" required>
+			</div>
+			<div class="input-row">
+				<label>电话</label>
+				<input type="tel" name="tel" placeholder="联系人电话" required pattern="^(13[0-9]|15[0|1|3|6|7|8|9]|18[8|9])\d{8}$">
+				<div class="form_hint">请填写11位数的手机号码</div>
+			</div>
+			<div class="input-row">
+				<label>邮箱</label>
+				<input type="email" name="email" placeholder="请填写邮箱" required pattern="^[a-zA-Z0-9-\_.]+@[a-zA-Z0-9-\_.]+\.[a-zA-Z0-9.]{2,5}$">
+				<div class="form_hint">请填写正确的邮箱</div>
+			</div>
+			<div class="input-row">
+				<label>地点</label>
+				<input type="text" name="text" placeholder="请输入地址" required>
+			</div>
+			<div class="input-row input-row-hauto">
+				<label>内容介绍</label>
+				<textarea title="内容输入框" placeholder="请输入内容介绍" name="yj" cols="20" rows="5" required></textarea>
+			</div>
+			<div class="input-row input-row-hauto">
+				<label>上传图片</label>
+				<ul class="upload-box">
+					<li><img src="images/zhny.png"></li>
+					<li>
+						<a href="#" class="upload-addimg"><span class="icon-uniE92E"></span></a>
+					</li>
+				</ul>
+			</div>
+			<button type="submit" class="btn cy-btn">确认保存</button>
+		</form>
+	</div>
+</body>
+</html>

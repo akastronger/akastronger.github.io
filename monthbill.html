@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>月账单</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+            <div>
+                <header>
+                    <div class="header">
+                        <h1>月账单</h1>
+                        <a href="mywalletRecord.html" class="return"><i class="icon-16"></i></a>
+                    </div>
+                </header>
+                <div style="height: 2.5rem;"></div>
+            </div>
+			<!--月账单-->
+			<div class="month-bill">
+                    <div class="month-bill-h">
+                              <p><b>04</b>月/2016</p>
+                              <span>4月消费情况</span>
+                      </div>            
+                      <div class="month-con month-bb">
+                           		<h1>总消费<span>-173.17</span></h1>
+                                <ul>
+                                        <li><i class="icon-uniE93D ba-color6"></i><p>参加活动</p><span>15.87</span></li>
+                                        <li><i class="icon-uniE94C ba-color2"></i><p>赠送好友</p><span>7.60</span></li>
+                                </ul>
+                        </div>                                             
+                        <div class="month-con">
+                           		<h1>总收入<span>0.00</span></h1>
+                                	<ul>
+                                         <li><i class="icon-icon ba-color"></i><p>充值</p><span>7.60</span></li>
+                                         <li><i class="icon-uniE94C ba-color2"></i><p>好友赠送</p><span>7.60</span></li>
+                                         <li><i class="icon-uniE96C ba-color3"></i><p>签到</p><span>7.60</span></li>
+                                         <li><i class="icon-uniE945 ba-gray"></i><p>其他</p><span>7.60</span></li>
+                                   </ul>
+                         </div>          
+               </div>
+               	<div>
+               			<i class="icon-uniE951 month-c"></i>                               		
+                     	<ul class="month-m month-mon">
+                                <div class="month-t"></div>
+                                <li><a href="#">2016年06月</a></li>
+                                <li><a href="#">2016年05月</a></li>
+                                <li class="month-now"><a href="#">2016年04月</a></li>
+                                <li><a href="#">2016年03月</a></li>
+                                <li><a href="#">2016年02月</a></li>
+                         </ul>
+                 </div>
+         <!--月账单end-->
+         <!--引入JS-->   
+        <script type="text/javascript" src="js/zepto.min.js"></script> 
+    	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".month-c").click(function(){
+				$(".month-m").toggleClass("month-r")
+			});
+		});
+		$(document).ready(function(){
+			$(".month-bill").click(function(){
+				$(".month-m").removeClass("month-r")
+			});
+		});
+	</script> 
+</body>
+</html>

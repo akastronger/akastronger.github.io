@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>账户流水</title>
+    <link href="fonts/iconfont.css" rel="stylesheet"/>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="header">
+                <h1>账户流水</h1>
+                <a href="userPu.html" class="return"><i class="icon-16"></i></a>
+            </div>
+        </header>
+        <div style="height: 2.5rem;"></div>
+    </div>
+    <!-- 账户流水 mywalletRecord -->
+    <div class="r-Record">
+        <div class="Month">
+            <h1>本月 <a href="monthbill.html" class="fr">查看月账单<i class="icon-uniE926"></i></a></h1>
+            <ul class="record">
+                <li>
+                    <a href="javascript:;">
+                        <p class="recordUse">充值<span class="addMoney">100</span></p>
+                        <p class="recordTime">5月-19日&nbsp;15:02:20</p>
+                    </a>
+                    <div class="recordDetail">
+                        <dl><dt>来　　自：</dt><dd>采云币充值</dd></dl>
+                        <dl><dt>当前状态：</dt><dd>充值成功</dd></dl>
+                        <dl><dt>充值时间：</dt><dd>2016-05-19&nbsp;15:02:20</dd></dl>
+                        <dl><dt>支付方式：</dt><dd>微信支付</dd></dl>
+                        <dl><dt>交易单号：</dt><dd>400200100020030044595</dd></dl>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="recordUse">报名活动-佛山周末采销活动<span class="outMoney">200</span></p>
+                        <p class="recordTime">5月-18日&nbsp;12:02</p>
+                    </a>
+                    <div class="recordDetail">
+                        <dl><dt>商　　品：</dt><dd>佛山周末采销活动</dd></dl>
+                        <dl><dt>商户名称：</dt><dd>采云科技</dd></dl>
+                        <dl><dt>当前状态：</dt><dd>支付成功</dd></dl>
+                        <dl><dt>支付时间：</dt><dd>2016-05-19&nbsp;15:02:20</dd></dl>
+                        <dl><dt>支付方式：</dt><dd>采云币余额</dd></dl>
+                        <dl><dt>交易单号：</dt><dd>400200100020030044595</dd></dl>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="recordUse">赠送-苏晓格<span class="outMoney">20</span></p>
+                        <p class="recordTime">5月-15日&nbsp;09:18</p>
+                    </a>
+                    <div class="recordDetail">
+                        <dl><dt>收&nbsp;款&nbsp;方：</dt><dd>苏晓格</dd></dl>
+                        <dl><dt>当前状态：</dt><dd>赠送成功</dd></dl>
+                        <dl><dt>赠送时间：</dt><dd>2016-05-19&nbsp;15:02:20</dd></dl>
+                        <dl><dt>支付方式：</dt><dd>采云币余额</dd></dl>
+                        <dl><dt>交易单号：</dt><dd>400200100020030044595</dd></dl>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="recordUse">收到-安琪拉<span class="addMoney">20</span></p>
+                        <p class="recordTime">5月-14日&nbsp;09:18</p>
+                    </a>
+                    <div class="recordDetail">
+                        <dl><dt>来　　自：</dt><dd>郭小帅</dd></dl>
+                        <dl><dt>当前状态：</dt><dd>入账成功</dd></dl>
+                        <dl><dt>到账时间：</dt><dd>2016-05-19&nbsp;15:02:20</dd></dl>
+                        <dl><dt>交易单号：</dt><dd>400200100020030044595</dd></dl>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <p class="recordUse">发布供求<span class="addMoney">2</span></p>
+                        <p class="recordTime">5月-13日&nbsp;14:18</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 账户流水 mywalletRecord end-->
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.record li a').click(function(){
+                $(this).siblings().toggle();
+            });
+
+        });
+    </script>
+</body>
+</html>
