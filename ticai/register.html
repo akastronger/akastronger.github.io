@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+  	<script type="text/javascript" src="js/My.js"></script>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<link href="css/base.css" type="text/css" rel="stylesheet"/>
+	<link href="css/common.css" type="text/css" rel="stylesheet"/>
+	<link href="css/magnific-popup.css" type="text/css" rel="stylesheet"/>
+	<link href="static/common/css/ticai-common.css" type="text/css" rel="stylesheet"/>
+    <link href="static/common/css/ticai-shengfucai-mark.css" type="text/css" rel="stylesheet"/>
+    <link href="css/ticai-common.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<title>注册</title>
+</head>
+<body>
+	<div class="main">
+		<div class="pL5 pR5 bge39 pT10 pB10 clearfix texC">
+			<a href="javascript:history.go(-1);"><img src="img/back.png" width="15" height="25" class="fl"/></a>
+			<font class="font18 cfff">注册</font>
+			<a href="login.html"><input type="button" value="登录" class="fr borN bge39 cfff font15"></a>
+		</div>
+		<div class="login">
+	    	<input class="block numbel"	type="tel" placeholder="输入您的手机号码" />
+	        <input class="block"	type="password" placeholder="输入6-16个字符的密码" />
+        </div>
+    	<div class="login r_y" style="margin-top:20px;">
+    	<div class="i_yzm">
+            <input class="block sr" type="text" placeholder="输入验证码" />
+            <input class="block yzm" id="btn1" type="button" value="免费获取验证码" /> 
+        </div>
+        <input class="block"	type="text" placeholder="推荐人编号" />
+    </div>
+		<div class="pLh">
+    	<p class=" pLh font15 pT10 fl">注册即表示您已同意<a href="javascript:popupXieyi();" class="cfb2">《亿发竞彩网服务条款》</a></p>
+    </div>
+    <div class="l_b" style="margin:40px auto 0;">
+	    	<input class="block" type="button" value="提交" />
+	    </div>
+		<div class="r_r wd95 mA font14">
+		    <a class="disB font14" href="name_register.html">
+		        用户名注册
+		    </a>
+		</div>
+		<div class="r_tel wd100">
+    		<a tel="12312312312" class="disB texC">客服热线：12312312312</a>
+    	</div>
+    	<div class="xieyi hide">
+    <div class="pheader"><div class="ptitle center x16 bold white-text">《亿发竞彩网服务条款》</div></div>
+    <div class="pbody white x14" style="color:#bfbfbf;">
+      <p style="text-indent:2em;">本协议系甲、乙双方自愿签订，甲方愿意将自己购买于 年 月 日的 色 电动车 转让给乙方，乙方愿意购买并接管上述产品并达成以下协议，本协议自签订之日起执行。</p>
+      <p>1、甲方愿意以 元的价格出售自己私有的电动车，出售后不得随意以任何理由提高或者更改价格；</p>
+      <p>2、甲方将电动车一经转让给乙方后，不再为此车辆承任何责任；同时，不再对该车辆享有任何权利；</p>
+      <p>3、乙方愿意接受上述价格，并且在交接车辆当日检查无误后接管该电动车，不得以其他任何理由调价或者退还车辆；</p>
+      <p>4、乙方一经接管该车辆后，应该对自身安全及车辆安全负全部责任，比如：车辆及零部件的损坏、车辆被盗或者交通事故等。</p>
+      <p>5、甲、乙双方除了交接车辆以外，甲方应该将当初购车时的原始票据、车辆三包凭证、使用说明书、行驶证等相关证件全部交接给乙方。</p>
+      <p>6、以上协议达成共识，一式两份，甲、乙双方各执一份。如有任何不尽之处，有甲、乙双方协商解决。</p>
+    </div>
+    <div class="pfooter white"><a class="btn-red btn-center" href="javascript:void(0);" id="btnXieyi">确定</a></div>
+  </div>
+	</div>
+	</div>
+	<script>	
+$(function(){
+	$(".confirm").toggle(function(){
+		$(this).attr("src","img/tongyi1.png")	
+	},function(){
+		$(this).attr("src","img/tongyi2.png")	
+	});
+	
+});
+// 风险、协议弹窗
+    function popupFenxian(){
+      $(".fenxian").removeClass("hide").addClass("popup");
+      $("#btnFenxian").click(function(){
+        $(".fenxian").removeClass("popup").addClass("hide");
+      });
+    }
+    function popupXieyi(){
+      $(".xieyi").removeClass("hide").addClass("popup");
+      $("#btnXieyi").click(function(){
+        $(".xieyi").removeClass("popup").addClass("hide");
+      });
+    }
+    
+    $('.ajax-popup-link').magnificPopup({
+      type: 'ajax',
+      modal: true,
+      callbacks: {
+        ajaxContentAdded: function(){
+          $("#btnClose").click(function(){
+            var caidian = $('[type="radio"]:checked').siblings("label").find("span").html();
+            $(".ajax-popup-link").html(caidian);
+            $.magnificPopup.close();
+          });
+        },
+      }
+    });
+
+</script>
+</body>
+</html>

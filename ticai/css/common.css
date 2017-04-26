@@ -1,0 +1,114 @@
+/*六场半全场完成订单*/
+/*资讯*/
+/* banner */
+.banner{position:relative;}
+.banner .sb{width:100%;height:7px;position:absolute;z-index:1;bottom:10px;text-align:center;}
+.banner .sb ul li{ display:inline-block; width:7px; height:7px; border-radius:50%; background:#fff;text-indent:9999px;overflow:hidden; margin:0 5px;}
+.banner .sb ul li.on{ background:#7f446e;}
+.banner .bs{position:relative;z-index:0;}
+.banner .bs li img{width:100%}
+
+/*资讯*/
+.news ul li{width:16.1%;text-align:center;height:35px;line-height:30px;}
+.news2 ul li h3, .news2 ul li h4{line-height:25px;}
+.news2 ul li{border-bottom:1px solid #E5E5E5;padding-bottom:5px;padding-top:5px;}
+.news{width:100%;box-shadow:2px 5px 5px #D6D6D6;}
+.news2 a:hover{color:red;}
+.fix{position:fixed;left:80%;top:82%;}
+.active{border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: red; color: red;}
+/*资讯详情*/
+.tit{border-bottom:1px solid #A8A8A8;}
+.news_detail p{padding-left:5%;padding-right:5%;color:#1F1F1F;font-size:12px;}
+/*登录*/
+.login{width:95%;margin:0 auto;overflow:hidden;border:1px solid #dedfe0;border-radius:5px;-webkit-border-radius:5px;margin-top:40px;}
+.login input{width:90%;height:50px;line-height:50px;border:none;font-size:1.6em;padding:0 5%;color:#333;}
+.login input.numbel{border-bottom:1px solid #dedfe0;}
+/*密码重置*/
+.p_r_btn{margin-top:145px;}
+.p_r_btn input{border:none;font-size:1.95em;height:45px;line-height:45px;border-radius:5px;-webkit-border-radius:5px;color:#fff;}
+.p_r_btn input.btn1{margin-left:2.5%;background:#e23600;}
+.p_r_btn input.btn2{margin-right:2.5%;background:#ee7e10;}
+/*人才招聘*/
+.r_b{line-height:26px;background:#fff;padding:5px 0;}
+/*玩法*/
+.p_w{background:#fff;border-radius:5px;-webkit-border-radius:5px;border-collapse:inherit;border:1px solid #dedfe0;}
+.p_w tr td{padding:10px 5px 0;text-align:justify;}
+.p_w tr td.title{width:50px;vertical-align:top;}
+/*问题反馈*/
+.p_f{position:relative;}
+.p_f p{width:90%;color:#767676;margin:0 auto;padding:10px 0;}
+.p_f textarea{display:block;width:88%;margin:0 auto;line-height:24px;height:59px;border:1px solid #dedfe0;padding:5px 10px;}
+.p_f textarea::-webkit-input-placeholder{color:#767676;}
+.p_f textarea:-moz-placeholder{color:#767676;}
+.p_f textarea:-ms-input-placeholder{color:#767676;}
+.p_f p.p{border-bottom:1px solid #c5c5c5;}
+.p_f input{display:block;width:88%;height:50px;margin:10px 6%;opacity:0;-webkit-opacity:0;width:50px;}
+.p_f a{display:block;width:88%;height:50px;margin:10px 6%;width:50px;background:url(../img/+_01.png) no-repeat center center;background-size:100% 100%;bottom:0;}
+.p_f span{position:absolute;bottom:15px;left:91px;color:#767676;}
+.p_f img{margin-left:6%;}
+.p_f_btn input{display:block;width:94%;margin-left:3%;font-size:1.8em;height:45px;line-height:45px;color:#fff;border:none;background:#e23600;position:absolute;bottom:90px;}
+/*用户名注册*/
+.r_y{position:relative;}
+.i_yzm{background:#fff;border-bottom:1px solid #dedfe0;}
+.login input.sr{width:40%;}
+.login input.yz{position:absolute;bottom:9px;width:45%;text-align:center;right:4%;background:none;color:#e23600;padding-left:2%;border-left:1px solid #eaeaeb;height:32px;line-height:32px;}
+.login input.yzm{position:absolute;top:0;width:45%;text-align:center;right:4%;background:none;color:#e23600;padding-left:2%;border-left:1px solid #eaeaeb;height:32px;line-height:32px;margin-top:9px;}
+/*找回密码*/
+.r_p ul li{height:44px;line-height:44px;text-align:center;font-size:1.5em;color:#000;background:#fff;border-bottom:1px solid #e5e5e5;flex:auto;}
+.r_p ul li.on{border-bottom:1px solid #e23600;}
+.z_yzm{background:#fff;border-top:1px solid #dedfe0;}
+.login input.hq{position:absolute;top:50px;width:45%;text-align:center;right:4%;background:none;color:#e23600;padding-left:2%;border-left:1px solid #eaeaeb;height:32px;line-height:32px;margin-top:9px;}
+/*注册*/
+.r_y{position:relative;}
+.i_yzm{background:#fff;border-bottom:1px solid #dedfe0;}
+.login input.sr{width:40%;}
+.l_b{width:95%;margin:100px auto 0;}
+.l_b input{height:45px;line-height:45px;text-align:center;width:100%;border:none;background:#e23600;font-size:1.8em;color:#fff;border-radius:5px;-webkit-border-radius:5px;}
+.r_r a{color:#e23600;margin-top:20px;}
+.r_tel{position:fixed;bottom:15px;}
+.r_tel a{color:#767676;}
+/*超级大乐透走势图*/
+.area span.on{color:red;border-bottom:1px solid red;}
+.area span{cursor:pointer;}
+.area1 span{ cursor:pointer;}
+.area1 span.on{color:red;}
+.super1{background-color:#F9F7F3;}
+.super2 span{width:10%;display:block;float:left;font-size:14px;text-align:center;}
+.super2{background-color:#EFECE5;}
+.super4 span{width:10%;display:block;float:left;font-size:14px;text-align:center;padding-top:5px;padding-bottom:5px;}
+.super3{background-color:#EFECE5;}
+table td{text-align: center;}
+/*任选九场购彩大厅*/
+.nine{display:none;}
+/*六场半全场合买详情*/
+.index-top{height:43px; line-height:43px; background:#e23600;}
+/*订单详情*/
+.xiangqinui1 li{height:30px; line-height:30px; padding-left:5%; padding-right:5%; border-bottom:1px solid #e5e5e5;}
+.hide{display: none;opacity: 0;}
+.pheader{background: #e23600;height: 5%;padding:8px 0px;}
+.pbody{ height: 70%; overflow-y:scroll; padding: 1em; }
+.pfooter{ height: 12%; border-top: 1px solid #eee; display: flex; align-items: center;}
+.pbody p{ margin-bottom: 10px;}
+.popup{position: fixed;width: 90%;height: 60%;overflow: hidden;left: 5%;top: 15%;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);z-index: 100;}
+.cE23{color:#E23900;}
+.disINB{display:inline-block;}
+.pL20{padding-left: 20px;}
+.question{font-style:normal;color:#E23900;padding-left: 5px;}
+
+#beishu{outline:0; border:1px solid #e5e5e5;}
+
+.index-bottom{height:44px;  background:#252626; position:fixed; left:0px; bottom:0px; z-index:100; width:90%;padding-left:5%; padding-right:5%;}
+.bottom-left{height:32px; line-height:32px; width:25%; background:#434343; margin-top:5px; text-align:center; border-radius:4px;}
+.bottom-right{height:32px; line-height:32px; width:25%; background:#ffba00; margin-top:5px; text-align:center; border-radius:4px;}
+.bottom-left2{height:26px; line-height:26px; width:13%; margin-top:5px; text-align:center;}
+.bottom-center{height:32px; line-height:32px; width:50%; margin-top:5px; text-align:center;}
+
+.buy_jie li{padding:12px 19px;border-bottom:1px solid #e5e5e5;}
+.but_an{display:block;height:45px;line-height:45px;background:#e23600;margin-top:61px;margin-bottom:10px;border-radius:5px;width:95%;}
+/*个人中心*/
+.center_top a{display:inline-block;width:100%; background:url(../img/dfr.png) no-repeat right center; background-size:14px 20px;}
+.center_top h3, .center_top h4{padding-left:75px;line-height:28px;} 
+.cter a{display:inline-block;width:50%;  background-size:14px 20px;}
+.cter h3, .cter h4{padding-left:75px;line-height:28px;} 
+ /* 提款*/
+  .draw{border-bottom: 1px solid red; color: red;}

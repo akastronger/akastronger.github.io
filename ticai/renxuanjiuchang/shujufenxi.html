@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tcAnalysisApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="../bower_components/bootstrap/dist/css//bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="../static/common/css/ticai-common.css" type="text/css" rel="stylesheet" />
+    <link href="../static/common/css/ticai-daletou-mark.css" type="text/css" rel="stylesheet" />
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../app/tc-jczq.js"></script>
+    <title>赛事分析</title>
+</head>
+
+<body style="background-color: #f2f3f5;" ng-controller="mainCtrl">
+    <nav>
+        <a href="javascript:history.go(-1);" class="go_page"><img src="../static/common/img/go.png" width="13" /></a>
+        <a href="" class="fr pdR5"><img src="../static/common/img/home.png" height="26" width="26" /></a>
+        <p class="white-text center">赛事分析</p>
+    </nav>
+
+    <div id="battleVS" class="center pdV20">
+        <div class="player1">
+            <span class="outcircle"><img src="../static/common/img/tiantai.png" height="44" alt="仙台维加泰"></span>
+            <p>仙台维加泰</p>
+        </div>
+        <div class="battle center">
+            <p>15/16天皇杯第四圈</p>
+            <p>VS</p>
+            <p>1:2</p>
+        </div>
+        <div class="player2">
+            <span class="outcircle"><img src="../static/common/img/ludao.png" height="44" class="outcircle" alt="鹿岛鹿角"></span>
+            <p>鹿岛鹿角</p>
+        </div>
+    </div>
+
+    <div id="tabCMD" class="row white center bottom-line x16">
+        <div class="col-xs-4 pdV10" ng-class="{activeCMD: activeCMD.shuju}" ng-click="tabSwitch('shuju')">数据分析</div>
+        <div class="col-xs-4 pdV10 left-line" ng-class="{activeCMD: activeCMD.baijia}" ng-click="tabSwitch('baijia')">百家欧赔</div>
+        <div class="col-xs-4 pdV10 left-line" ng-class="{activeCMD: activeCMD.yapan}" ng-click="tabSwitch('yapan')">亚盘对比</div>
+    </div>
+
+    <shu-ju-feng-xi ng-show="activeCMD.shuju"></shu-ju-feng-xi>
+    <bai-jia-pei-ou ng-show="activeCMD.baijia"></bai-jia-pei-ou>
+    <ya-pan-dui-bi ng-show="activeCMD.yapan"></ya-pan-dui-bi>
+</body>
+</html>

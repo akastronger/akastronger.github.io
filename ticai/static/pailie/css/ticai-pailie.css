@@ -1,0 +1,91 @@
+/* 排列三组选 */
+.tab_top{overflow:hidden;position:relative;}
+.tab_top li{width:50%;float:left;text-align:center;height:44px;line-height:44px;border-bottom:1px solid #e5e5e5;font-size:1.5em;background:#ffffff;}
+.tab_top .on{border-bottom:1px solid #e23600;}
+.tab_top .on a{color:#e23600;}
+.tab_top .img_4{position:absolute;top:5px;left:50%;}
+.tab_three li{width:33.3%;}
+
+.pai-list .ball-area{
+  padding-left: 58px;
+}
+.ball-area ul{
+  margin: 10px 0;
+}
+.ball-area ul:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+.ball-area ul li{
+  float: left;
+  width: 18%;
+}
+.ball{
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 17px;
+  color: #ff8a00;
+  text-align: center;
+  margin: 0 auto;
+}
+.pai-list{
+  padding-bottom: 10px;
+  border-bottom: 1px dashed silver;
+}
+.ticai-select{
+  padding: 10px 15px;
+  background-color: #f2f3f5;
+}
+.ball-area .on{
+  border-color: #ff8a00;
+  background-color: #ff8a00;
+  color: #fff;
+  animation: scale .2s ease;
+}
+
+.ticai-select { padding-left: 15px; }
+
+/* block sel-times */
+.sel-times{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
+}
+.sel-times input{
+  margin: 0 10px;
+  width: 45px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 2px;
+  vertical-align: top;
+}
+.sel-times span{
+  font-size:16px;
+  vertical-align: middle;
+}
+/* endblock */
+.sel-result{
+  padding: 1.6em;
+}
+.sel-content{
+  display: inline-block;
+  margin-left: 10px;
+}
+.sel-tip{
+  font-size: 15px;
+}
+.sel-detail{
+  margin-top: 10px;
+}

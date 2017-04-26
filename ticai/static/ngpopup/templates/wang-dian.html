@@ -1,0 +1,37 @@
+
+<div class="pheader"><div class="ptitle center x16 white-text">投注站点</div></div>
+<div class="pbody white font14" style="color:#bfbfbf;">
+  <div class="location-wrapper" style="border-bottom: 1px solid #eee;">
+    <select class="prov" id="" title="选择省" ng-model="province" ng-options="item as item.p for item in city_list.citylist track by item.p">
+      <option value="">请选择省</option>
+    </select>
+    <select class="city" id="" title="选择市" ng-model="city" ng-options="item as item.n for item in province.c">
+      <option value="">请选择市</option>
+    </select>
+    <select class="dist" id="" title="选择区" ng-model="area" ng-options="item as item.s for item in city.a">
+      <option value="">请选择区</option>
+    </select>
+  </div>
+  <!--<div class="">{{province.p}}{{ city.n + area.s}}</div>-->
+
+  <form name="dian" id="location">
+  <div>
+    <input type="radio" ng-model="location" value="拱墅区A网点" class="fr" checked id="a1"></checkbox>
+    <label for="a1"><span class="black-text">拱墅区A网点</span><i class="icon icon-location mgL10"></i>1km</label>
+  </div>
+  <div>
+    <input type="radio" ng-model="location" value="拱墅区B网点" class="fr" id="b1"></checkbox>
+    <label for="b1"><span class="black-text">拱墅区B网点</span><i class="icon icon-location mgL10"></i>2km</label>
+  </div>
+  <div>
+    <input type="radio" ng-model="location" value="拱墅区C网点" class="fr" id="c1"></checkbox>
+    <label for="c1"><span class="black-text">拱墅区C网点</span><i class="icon icon-location mgL10"></i>3km</label>
+  </div>
+  <div>
+    <input type="radio" ng-model="location" value="拱墅区D网点" class="fr" id="d1"></checkbox>
+    <label for="d1"><span class="black-text">拱墅区D网点</span><i class="icon icon-location mgL10"></i>4km</label>
+  </div>
+  </form>
+
+</div>
+<div class="pfooter white"><a class="btn-red x14 btn-center" href="" ng-click="popup.showWangdian=false;" id="btnClose">确定</a></div>

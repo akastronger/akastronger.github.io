@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<link href="../css/base.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/common.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	
+	<script type="text/javascript" src="../js/citys.js"></script>
+	<title>提款</title>
+</head>
+<body style="background-color:#f2f3f5;">
+	<div class="main">
+		<div class="pL5 pR5 bge39 pT10 pB10 clearfix texC">
+			<a href="javascript:history.go(-1);"><img src="../img/back.png" width="15" height="25" class="fl"/></a>
+			<font class="font18 cfff">提款</font>
+			<a href=""><img src="../img/home.png" width="26" height="26"class="fr"/></a>
+	   </div>
+	   <div class="font15 clearfix texC drawing">
+		   	<span class="block wd49 fl  pT10 pB10 draw">我要提款</span>
+		   	<img src="../img/gg.png" height="30" class=" pT10 pB10">
+		   	<span class="block wd49 fr  pT10 pB10 ">提款明细</span>
+	   </div>
+	   <div>
+	   	    <div class=" account">
+		   		<div class="pL5 pR5 clearfix bgfff pT10 pB10">
+			   		<img src="../img/money.png" width="20">
+			   		<span class="font14">可提款金额</span>
+			   		<span class="font14 fr">9000元</span>
+	   	        </div>
+	   	        <p class="font15 a1a1 mT40 borB wd90 mA pB5">我要提款</p>
+	   	        <div class="bgfff clearfix mT12 wd90 mA radius5 pT10 pB10">
+	   	        	<span class="a1a1 font14 fl pL5">提款金额</span>
+	   	        	<input type="text" value="99" class="a1a1 font14 fr pR5 texC borN">
+	   	        </div>
+	   	        <button  class="block wd90 bge39 pT10 pB10 font20 radius5 borN cfff mT110 mA" >确定提款</button>
+	   	    </div>
+			<div class="bgfff account " style="display:none;">
+				<ul>
+					<li class="clearfix borB pT10 pB10 ">
+						<span class="wd24 font15 block fl texC">账户余额</span><img src="../img/gg.png" height="20" class="fl">
+						<span class="wd24 font15 block fl texC">提款金额</span><img src="../img/gg.png" height="20" class="fl">
+						<span class="wd24 font15 block fl texC">提款时间</span><img src="../img/gg.png" height="20" class="fl">
+						<span class="wd24 font15 block fl texC">状态</span>
+					</li>
+					<li class=" clearfix pT10 pB10 borB">
+						<span class="wd24 font12 block fl texC">222</span>
+						<span class="wd24 font12 block fl texC">4元</span>
+						<span class="wd24 font12 block fl texC">2015-12-12</span>
+						<span class="wd24 font12 block fl texC">成功</span>
+					</li>
+					<li class=" clearfix pT10 pB10 borB">
+						<span class="wd24 font12 block fl texC">222</span>
+						<span class="wd24 font12 block fl texC">4元</span>
+						<span class="wd24 font12 block fl texC">2015-12-12</span>
+						<span class="wd24 font12 block fl texC">成功</span>
+					</li>
+					<li class=" clearfix pT10 pB10 borB">
+						<span class="wd24 font12 block fl texC">222</span>
+						<span class="wd24 font12 block fl texC">4元</span>
+						<span class="wd24 font12 block fl texC">2015-12-12</span>
+						<span class="wd24 font12 block fl texC">成功</span>
+					</li>
+					<li class="clearfix pT10 pB10 borB">
+						<span class="wd24 font12 block fl texC">222</span>
+						<span class="wd24 font12 block fl texC">4元</span>
+						<span class="wd24 font12 block fl texC">2015-12-12</span>
+						<span class="wd24 font12 block fl texC">成功</span>
+					</li>
+				</ul>
+			</div>
+	   </div>
+	   <div class="bga6a wd100" style="position:fixed;top:91%;left:0;">
+					<ul class="clearfix pT5">
+						<a href="index_0.html">
+							<li class="fl wd25 texC ct"><img src="../img/foot4.png" height="24"><p class="font12 cfff">选彩</p></li>
+						</a>
+						<a href="">
+							<li class="fl wd25 texC ct"><img src="../img/foot5.png" height="24"><p class="font12 cfff">开奖</p></li>
+						</a>
+						<a href="">
+							<li class="fl wd25 texC ct"><img src="../img/foot6.png" height="24"><p class="font12 cfff">合买</p></li>
+						</a>
+						<a href="">
+							<li class="fl wd25 texC ct"><img src="../img/foot7_1.png" height="24"><p class="font12 bc7e">我的</p></li>
+						</a>
+					</ul>
+				</div>
+	</div>
+	<script>
+	$(function(){
+   $(".drawing span").click(function(){
+      var index = $(this).index() / 2;
+      $(this).addClass("draw").siblings().removeClass("draw");
+      $(".account").eq(index).show().siblings().hide();
+    });
+  });</script>
+</body>
+</html>

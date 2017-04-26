@@ -1,0 +1,11 @@
+ren9_buydetail.html        合买详情
+ren9_comfirmbuy.html       确认购买
+ren9_finishorder.html      完成订单
+ren9_he_finishorder.html      完成订单（合买）
+ren9_room.html             购彩大厅
+ren9_orderdetail.html      订单详情
+ren9_togetherbuy.html      发起合买
+ren9_pay.html              支付页面
+ren9_he_pay.html           支付页面（合买）
+rule.html                  合买规则
+shujufenxi.html            赛事分析详情

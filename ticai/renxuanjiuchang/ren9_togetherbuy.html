@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <script type="text/javascript" src="../js/jquery9.js"></script>
+  <link href="../static/common/css/ticai-common.css" type="text/css" rel="stylesheet"/>
+  <link href="../static/common/css/ticai-shengfucai-mark.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/base.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/common.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/magnific-popup.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/ticai-common.css" type="text/css" rel="stylesheet"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+  <title>发起合买</title>
+</head>
+<body bgcolor="#f9f8f0"> 
+<div class="main">
+	<div class="pL5 pR5 bge39 pT10 pB10 clearfix texC">
+		<a href="javascript:history.go(-1);"><img src="../img/back.png" width="15" height="25" class="fl"/></a>
+		<font class="font18 cfff">发起合买</font>
+		<a href=""><img src="../img/home.png" width="26" height="26"class="fr"/></a>
+	</div>
+    <ul class="wd90 pL5 pR5 font15 c000">
+    	<li class="clearfix mT20">
+        	<p class="fl wd50 ">方案金额: <span class="cfb2">12</span><span class="cfb2">元</span></p>
+            <p class="fl wd50 texC ">份数: <span class="cfb2">12</span><span class="cfb2">份</span></p>
+        </li>
+        <li class="clearfix mT10">
+        	<p class="fl">每份金额: <span class="cfb2">1</span><span class="cfb2">元</span></p>
+        </li>
+        <li class="clearfix mT20">
+        	<p class="fl">中奖佣金:</p>
+            <img src="../img/kaiguan.png" class="fr kaiguan" width="45">
+            <div class="clearfix"></div>
+            <table class="wd75 fr texC bgfff mT10" style="display:none;">
+            	<tr>
+                	<td>1%</td>
+                    <td>2%</td>
+                    <td>3%</td>
+                    <td>4%</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                	<td>6%</td>
+                    <td>7%</td>
+                    <td>8%</td>
+                    <td>9%</td>
+                    <td>10%</td>
+                </tr>
+            </table>
+        </li>
+        <li class="clearfix">
+        	<p class="fl pT10 pB10">购买份数:</p>
+            <div class="wd75 fr mT7 clearfix">
+            	<input type="text" class="wd15 bgfff fl borN texC pT6 pB5" id="beishu">
+                <p class="mT7 fl pL2">份</p>
+                <p class="mT7 fl pL5">20%</p>
+                <p class="mT7 fl pL4 cfb2">&nbsp;&nbsp;?</p>
+            </div>
+        </li>
+        <li class="clearfix">
+        	<p class="fl pT10 pB10">购买份数:</p>
+            <div class="wd75 fr mT7 clearfix">
+            	<div class="fl wd75" style="display:none;"><input type="text" class="wd20 bgfff fl borN texC pT6 pB5" id="beishu">
+                <p class="mT7 fl pL3">份</p>
+                <p class="mT7 fl pL5">20%</p>
+                <p class="mT7 fl pL5 cfb2">?</p>
+              </div>
+                <img src="../img/kaiguan.png" class="fr kaiguan" width="45">
+            </div>
+            
+        </li>
+        <li class="clearfix">
+        	<p class="fl pT15">保密设置:</p>
+            <div class="wd75 bgfff fr mT12">
+               <ul class="wd100 floored">
+                   <li class="fl wd30 bgfff borR texC font10 on pB2 pT2">公开</li>
+                   <li class="fl wd38 bgfff borR texC font10 pB2 pT2">参与者公开</li>
+                   <li class="fl wd30 bgfff texC font10 pB2 pT2">完全保密</li>
+               </ul>
+           </div>
+        </li>
+        <li class="clearfix mT10">
+        	<p class="fl pT10">方案标题:</p>
+            <input type="text" class="wd72 bgfff fr borN pT6 pB5 mT7 pL3 " value="任选九场">
+        </li>
+        <li class="clearfix mT10">
+        	<p class="fl pT10">方案描述:</p>
+            <input type="text" class="wd72 bgfff fr borN pT6 pB5 mT7 pL3 " value="任选九场精选方案">
+        </li>
+        <li class="clearfix mT10">
+        	出票网点: <a href="popup/wangdian_ajax.html" class="ajax-popup-link red-text cfb2">拱墅区A网点</a>
+        </li>
+        <li class="clearfix mT10">
+            	<img src="../img/tongyi2.png" width="15" class="fl mT2 confirm">
+                <p class="fl pL3">我已阅读并同意
+                	<a href="javascript:popupXieyi();" class="ce23">《用户合买代购协议》</a>
+                </p>
+        </li>
+        <li class="clearfix mT10">
+            <img src="../img/tongyi2.png" width="15" class="fl mT2 confirm">
+            <p class="fl pL3 wd90">彩票发行中心对竞彩进行限号管理，我已阅读并同意<a href="javascript:popupFenxian();" class="ce23">《竞彩投注风险须知》</a>
+            </p>
+        </li>
+    </ul>
+    <div class="fix-bottom">
+        <a href="" class="fr btn-yellow" id="selOk">付款</a>
+        <p class="center pdL10p font11" style="line-height:47px;width:100%;">
+          <span class="white-text">应付金额 <span class="orange-text">0.00元</span>
+        </p>
+  	</div>
+    <div class="fenxian hide">
+    <div class="pheader"><div class="ptitle center x16 bold white-text">竞彩投注风险须知</div></div>
+    <div class="pbody white x14" style="color:#bfbfbf;">
+      <p style="text-indent:2em;">本协议系甲、乙双方自愿签订，甲方愿意将自己购买于 年 月 日的 色 电动车 转让给乙方，乙方愿意购买并接管上述产品并达成以下协议，本协议自签订之日起执行。</p>
+      <p>1、甲方愿意以 元的价格出售自己私有的电动车，出售后不得随意以任何理由提高或者更改价格；</p>
+      <p>2、甲方将电动车一经转让给乙方后，不再为此车辆承任何责任；同时，不再对该车辆享有任何权利；</p>
+      <p>3、乙方愿意接受上述价格，并且在交接车辆当日检查无误后接管该电动车，不得以其他任何理由调价或者退还车辆；</p>
+      <p>4、乙方一经接管该车辆后，应该对自身安全及车辆安全负全部责任，比如：车辆及零部件的损坏、车辆被盗或者交通事故等。</p>
+      <p>5、甲、乙双方除了交接车辆以外，甲方应该将当初购车时的原始票据、车辆三包凭证、使用说明书、行驶证等相关证件全部交接给乙方。</p>
+      <p>6、以上协议达成共识，一式两份，甲、乙双方各执一份。如有任何不尽之处，有甲、乙双方协商解决。</p>
+    </div>
+    <div class="pfooter white"><a class="btn-red btn-center" href="javascript:void(0);" id="btnFenxian">确定</a></div>
+  </div>
+  <div class="xieyi hide">
+    <div class="pheader"><div class="ptitle center x16 bold white-text">用户购买协议</div></div>
+    <div class="pbody white x14" style="color:#bfbfbf;">
+      <p style="text-indent:2em;">本协议系甲、乙双方自愿签订，甲方愿意将自己购买于 年 月 日的 色 电动车 转让给乙方，乙方愿意购买并接管上述产品并达成以下协议，本协议自签订之日起执行。</p>
+      <p>1、甲方愿意以 元的价格出售自己私有的电动车，出售后不得随意以任何理由提高或者更改价格；</p>
+      <p>2、甲方将电动车一经转让给乙方后，不再为此车辆承任何责任；同时，不再对该车辆享有任何权利；</p>
+      <p>3、乙方愿意接受上述价格，并且在交接车辆当日检查无误后接管该电动车，不得以其他任何理由调价或者退还车辆；</p>
+      <p>4、乙方一经接管该车辆后，应该对自身安全及车辆安全负全部责任，比如：车辆及零部件的损坏、车辆被盗或者交通事故等。</p>
+      <p>5、甲、乙双方除了交接车辆以外，甲方应该将当初购车时的原始票据、车辆三包凭证、使用说明书、行驶证等相关证件全部交接给乙方。</p>
+      <p>6、以上协议达成共识，一式两份，甲、乙双方各执一份。如有任何不尽之处，有甲、乙双方协商解决。</p>
+    </div>
+    <div class="pfooter white"><a class="btn-red btn-center" href="javascript:void(0);" id="btnXieyi">确定</a></div>
+  </div>
+</div>
+<script>
+$(function(){
+	$(".kaiguan").toggle(function(){
+		$(this).siblings("table").show();
+		$(this).attr("src","../img/kaiguan2.png")	
+	},function(){
+		$(this).siblings("table").hide();
+		$(this).attr("src","../img/kaiguan.png")	
+	});	
+	$(".kaiguan").toggle(function(){
+		$(this).siblings("div").show();
+		$(this).attr("src","../img/kaiguan2.png")	
+	},function(){
+		$(this).siblings("div").hide();
+		$(this).attr("src","../img/kaiguan.png")	
+	});
+	$(".floored li").click(function(){
+		$(this).addClass("on")
+		$(this).siblings("li").removeClass("on")
+	})
+	$(".confirm").toggle(function(){
+		$(this).attr("src","../img/tongyi1.png")	
+	},function(){
+		$(this).attr("src","../img/tongyi2.png")	
+	});
+	
+    // 确定后消失（竞彩投注风险须知）
+   $("input[type='submit']").click(function(){
+     $(".hidden").fadeOut();
+     $(".hidden_child").fadeOut()
+   })
+   var beishu=$('#beishu');
+	$(beishu).on('click',function(){
+		beishu.val('');
+	})
+	$(beishu).on('keyup',function(evt){
+		var beishuVal=beishu.val();
+		beishuVal=beishuVal.replace('/[^d]+/g', ''); //替换非数字字符为空格
+		beishuVal=parseInt(beishuVal,10);
+		if(isNaN(beishuVal)){
+			beishuVal = '';
+		}
+		this.value=beishuVal;
+	})
+})
+
+// 风险、协议弹窗
+    function popupFenxian(){
+      $(".fenxian").removeClass("hide").addClass("popup");
+      $("#btnFenxian").click(function(){
+      $(".fenxian").removeClass("popup").addClass("hide");
+      });
+    }
+    function popupXieyi(){
+      $(".xieyi").removeClass("hide").addClass("popup");
+      $("#btnXieyi").click(function(){
+      $(".xieyi").removeClass("popup").addClass("hide");
+      });
+    }
+    
+    $('.ajax-popup-link').magnificPopup({
+      type: 'ajax',
+      modal: true,
+      callbacks: {
+        ajaxContentAdded: function(){
+          $("#btnClose").click(function(){
+            var caidian = $('[type="radio"]:checked').siblings("label").find("span").html();
+            $(".ajax-popup-link").html(caidian);
+            $.magnificPopup.close();
+          });
+        },
+      }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+<title>订单详情</title>
+<?php include('include/title.php')?>
+</head>
+<body>
+    <div class="main">
+    	<?php include('include/head.php')?>
+    	<div class="offer_det mT30">
+    		<div class="texC"><span class="font15 cfff offerd_tit radius20 bgb85 mA mT20 mB20">平安车险</span></div>
+            <ul class="offerd_list wd90 mA orderd_list">
+            	<li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3" style="line-height:35px;">上季度投保公司</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<div class="pL3">
+                        <select class="bgfff borN sel_btn radius20 font12 fl">
+                            <option>太平洋</option>
+                            <option>中国人</option>
+                            <option>神经病</option>
+                            <option>爱你</option>
+                            <option>哦也</option>
+                        </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">车牌号码</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">浙A 827XF</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">车主姓名</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">洪琳姝</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">联系方式</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">13336128868</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">品牌型号</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">别克英朗</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">发动机号</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">2GR-FSE</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">车架号码（后六位）</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">014050</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">金额</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<span class="pL3">6900元</span>
+                    </div>
+                </li>
+                <li class="clearfix borB">
+                	<div class="fl wd50 cfff font14"><span class="pL3">险种</span></div>
+                    <div class="fl wd50 cfff font14">
+                    	<div class="pL3">
+                        <dl class="orderd_dl">
+                            <dd>第三者责任险司</dd>
+                            <dd>司机座位险</dd>
+                            <dd>乘客座位险</dd>
+                            <dd>乘客座位险</dd>
+                        </dl>
+						</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="texC mB20">
+                <a href="##" class="btn home_btn mA cfff texC font15 mT30 a-bouncein">付款</a>
+                <!--<a href="javascript:history.back();" class="btn home_btn mA cfff texC font15 mT30 a-bouncein">返回</a>-->
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+</html>

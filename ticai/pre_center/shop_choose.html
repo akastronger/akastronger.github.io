@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<link href="../css/base.css" type="text/css" rel="stylesheet"/>
+	<link href="../css/common.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	
+	<script type="text/javascript" src="../js/citys.js"></script>
+	
+	<title>彩店选择</title>
+</head>
+<body style="background-color:#f2f3f5;">
+	<div class="main">
+		<div class="pL5 pR5 bge39 pT10 pB10 clearfix texC">
+			<a href="javascript:history.go(-1);"><img src="../img/back.png" width="15" height="25" class="fl"/></a>
+			<font class="font18 cfff">彩店选择</font>
+			<a href=""><img src="../img/home.png" width="26" height="26"class="fr"/></a>
+	   </div>
+	   <form action="" name="address" class="font15 texC bgfff pT5 pB5">
+	 	<select  name="province" class="borN wd30 " style="background:url(../img/yt.png) 95% center no-repeat;background-size:8px;">
+			<option value="">请选择省份</option>
+		</select><img src="../img/gg.png" >
+		<select name="city" class="borN wd30" style="background:url(../img/yt.png) 95% center no-repeat;background-size:8px;">
+			<option value="">请选择城市</option>
+		</select><img src="../img/gg.png">
+		<select name="area" class="borN wd30" style="background:url(../img/yt.png) 95% center no-repeat;background-size:8px;">
+			<option value="">请选择区县</option>
+		</select>
+        </form>
+        <div class="font14 cfb2 pT5 pB5 borT">
+			<p class="texC">未选择网点时，在***网点取票</p>
+			<p class="texC">（杭州市拱墅区祥园路88号）</p>
+	    </div>
+	    <div class="bgfff clearfix pT10 pB10 pL5 borB pR5">
+	    	<img src="../img/qs.png" width="20" class="t">
+	    	<span class="font14">拱墅区网点</span>
+	    	<span class="font14 a1a1 fr">1km</span>
+	    </div>
+	    <div class="bgfff clearfix pT10 pB10 pL5 pR5">
+	    	<img src="../img/qs.png" width="20" class="t">
+	    	<span class="font14">拱墅区A网点</span>
+	    	<span class="font14 a1a1 fr">10km</span>
+	    </div>
+	</div>
+	<button  class="block wd90 bge39 pT10 pB10 font18 radius5 borN cfff mT110 mA" >确定</button>
+</body>
+<script>
+   $(function(){
+   	var form=document.address;
+   	var province=form.province;
+   	var city=form.city;
+   	var area=form.area;
+      province.onfocus=function(){
+      	province.innerHTML="<option value=''>请选择省份</option>";//清空数值
+      	for (var i = 0; i < provinceList.length; i++) {
+      		var option=document.createElement("option");
+      		option.text=provinceList[i].name
+      		province.appendChild(option)
+      	};
+      }
+      var num;
+      province.onchange=function(){
+      	city.innerHTML="<option value=''>请选择城市</option>";//清空数值
+      	//先获取省份里的内容
+          num=province.selectedIndex-1;
+         var arr=provinceList[num].cityList;//所有市的数组
+         for (var i = 0;i < arr.length; i++) {
+         	var option=document.createElement("option");
+         	option.text=arr[i].name;
+         	city.appendChild(option)
+         };
+      }
+
+      city.onchange=function(){
+         area.innerHTML="<option value=''>请选择区县</option>";
+         var num1=this.selectedIndex-1;
+         for (var i = 0; i < provinceList[num].cityList[num1].areaList.length; i++) {
+         	var option=document.createElement("option");
+         	option.text=provinceList[num].cityList[num1].areaList[i];
+         	area.appendChild(option);
+         };
+
+      }
+   });
+
+
+	$(".t").click(function(){
+		var src = $(this).attr("src");
+		if (src.indexOf("sq.png") >-1){
+			$(this).attr("src","../img/qs.png");
+		}else{
+			$(this).attr("src","../img/sq.png");
+		}
+	});
+   
+	</script>
+</html>

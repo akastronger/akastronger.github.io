@@ -1,0 +1,26 @@
+center.html   个人中心
+download.html  下载客户端
+person_pin.html 人才招聘
+recharge.html   充值
+recharge_ok.html  充值成功
+charge_detail.html 充值明细
+lottery_detail.html 购彩详情
+lottery_record.html 购彩记录
+od_detail.html      订单详情
+shop_choose.html    彩店选择
+nopay_detail.html   未付款详情
+drawing.html    提款
+programme_details.html   方案详情
+message_detail.html   消息详情
+message_center.html   消息中心
+bind mailbox.html     绑定邮箱
+chongzhi.html       充值（设置）
+feedback.html    意见反馈
+modify_password.html  修改密码
+certification.html   实名认证
+rebound_phone.html   更改绑定手机
+bound_phone.html    绑定手机
+set.html         设置
+account_details.html  账户明细
+mycard.html    我的银行卡
+add_card.html   添加银行卡

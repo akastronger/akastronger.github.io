@@ -1,0 +1,23 @@
+<div id="modalbg">
+
+</div>
+<div class="filter-wrapper" ng-controller="gameFilterCtrl">
+    <div class="pheader pdL25 h40">
+        <span class="x16">赛事选择</span>
+        <span class="fr mgR10">共48场比赛</span>
+    </div>
+    <div class="pbody container-fluid">
+        <div class="pdH10 row">
+            <div class="col-xs-4" ng-click="vm.selectAll()">全选</div>
+            <div class="col-xs-4" ng-click="vm.selectReverse()">反选</div>
+            <div class="col-xs-4" ng-click="vm.selectSpec()">仅五大联赛</div>
+        </div>
+        <div class="pdH10 mgT10 row">
+            <span class="lbl mgR10" ng-class="{'bg-reverse': vm.isInSelection(t.type.name)}" ng-click="vm.check(t.type.name)" ng-repeat="t in vm.types" ng-bind="t.type.name"></span>
+        </div>
+    </div>
+    <div class="pfooter h40" style="border-top:none;">
+        <div class="col-xs-6" ng-click="$parent.show_filter=false">取消</div>
+        <div class="col-xs-6" ng-click="vm.doFilter();$parent.show_filter=false">确定</div>
+    </div>
+</div>

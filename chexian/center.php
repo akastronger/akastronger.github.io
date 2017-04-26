@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+<title>个人中心</title>
+<link href="css/base.css" type="text/css" rel="stylesheet"/>
+<link href="css/common.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background:#fff;">
+    <div class="main">
+    	<?php include('include/head.php')?>
+        <div class="center-top">
+        	<div class="center_head a-bouncein">
+            	<!--<img src="img/center_head.png" width="100%" class="head_bg"/>-->
+                <div class="head_img radius50"><img src="img/head.png"/></div>
+            </div>
+            <p class="texC cfff font15">小丸子</p>
+            <div class="centert_b texC">
+            	<!--<span class="c8ab font14">13336128868</span>-->
+                <font class="c8ab font14">点击头像完善信息</font>
+                <!--<font class="c8ab font14 pL2">抽奖码</font>-->
+                <a href="##" class="btn a-fadeinR"><img src="img/center_img.png" width="60"/></a>
+            </div>
+        </div>
+        <div class="center_list over">
+            <ul class="clearfix texC">
+            	<li class="fl pT10 pB10">
+                    <a href="mycar.php">
+                        <img src="img/center_ico_10.png" width="40%" class="a-bouncein"/>
+                        <h3 class="font13 c421">我的车辆</h3>
+                    </a>
+                </li>
+                <li class="fl pT10 pB10">
+                    <a href="myorder.php">
+                        <img src="img/center_ico_05.png" width="40%" class="a-bouncein"/>
+                        <h3 class="font13 c421">我的订单</h3>
+                    </a>
+                </li>
+                <li class="fl pT10 pB10">
+                    <a href="service.php">
+                        <img src="img/center_ico_03.png" width="40%" class="a-bouncein"/>
+                        <h3 class="font13 c421">客户服务</h3>
+                    </a>
+                </li>
+                <li class="fl pT10 pB10">
+                    <a href="lotteryn.php">
+                        <img src="img/center_ico_12.png" width="40%" class="a-bouncein"/>
+                        <h3 class="font13 c421">抽奖详情</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+</html>

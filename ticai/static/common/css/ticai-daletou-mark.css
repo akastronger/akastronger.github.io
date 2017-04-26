@@ -1,0 +1,187 @@
+body{ background-color: white; }
+nav p { font-size:18px; margin-left:2em; }
+.container-fluid { font-family: "微软雅黑", "黑体"; }
+
+.fix-bottom{ font-family: "黑体", " 微软雅黑"; padding-top:4px;}
+.fix-bottom p{ font-size:16px; line-height: 47px; }
+
+.tc-deadline { padding: 0; }
+.tc-deadline>div{ display: inline-block; font-size: 12px; }
+.tc-deadline>div:first-child{ padding-left: 10px; padding-right: 10px; }
+.tc-deadline>div:nth-child(2){ padding-left: 10px; }
+.tc-deadline img { margin-right: -20px; }
+
+.tc-select-guide { background-color: #f2f3f5; padding: 5px; }
+.tc-select-guide p { font-size: 10px; padding:0; margin:0; }
+
+/* block sel-times */
+.sel-times{
+  width: 100%;
+  height: 38px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
+  padding: 0;
+  font-size: 14px;
+}
+.sel-times>div{ height: 100%; display: inline-block; line-height: 38px;}
+.sel-times input{
+  outline: none;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  line-height: initial;
+}
+.sel-times input[type="text"], .sel-times input[type="number"]{
+  height: 25px;
+  width: 40px;
+  text-align: center;
+  margin: -5px 10px 0 10px;
+}
+/* endblock */
+
+.ticai-select { padding-left: 15px; padding-right: 10px; }
+
+/* 选区 */
+.tc-number-pool{ margin-left: -5px; }
+.tc-number-pool ul, .tc-number-pool li{
+  list-style: none;
+  display: inline-block;
+}
+.tc-number-pool ul{ width: 100%; }
+.tc-number-pool li {
+    width: 14.28%;
+}
+ul{ padding: 0; }
+.tc-number-pool li { display: inline-block; margin-bottom: 5px; position: relative; }
+.tc-number-pool .mark-dan:before{ content: '胆'; font-size: 10px; position: absolute; top: -10px; left: 20px; color: #fff; background-color: #e23600; border: 1px solid red; border-radius: 50%; height: 16px; width: 16px; line-height: 14px; }
+.tc-number-pool .mark-tuo:before{ content: '托'; font-size: 10px; position: absolute; top: -10px; left: 20px; color: #fff; background-color: #e23600; border: 1px solid red; border-radius: 50%; height: 16px; width: 16px; line-height: 14px; }
+
+/* 前区 */
+.tc-number-pool li i{ 
+  border: 1px solid #d2d2d2; 
+  border-radius: 50%; 
+  background-color: #fff;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #ff8a00;
+  text-align: center;
+  font-size: 17px;
+}
+.tc-number-pool h3{ margin-top: 10px; margin-bottom: 10px;  font-size:18px; }
+/* 后区 */
+.pool-back li i { 
+  color: #3ab4dc;
+}
+/* 选中*/
+.pool-front .active { 
+  background-color: #e23600 !important;
+  color: #fff !important;
+}
+.pool-back .active{
+  background-color: #3ab4dc !important;
+  color: #fff !important;
+}
+
+/* block .ticai-select */
+.ball-sm{ 
+  display:inline-block; 
+  width: 18px; height:18px; 
+  margin-right:5px; 
+  margin-left:0; 
+  text-align:center; 
+  vertical-align:middle; 
+  border-radius: 50%; 
+  background-color:#e23600; 
+  color:#fff; 
+}
+.ticai-select {background-color: #f2f3f5;}
+.ticai-select .entry .item{ display:block; width:100%; }
+.ticai-select .icon-times{ margin-top:10px; }
+/* endblock */
+.sel-rules p{ margin-bottom: 10px; }
+
+/* block modal */
+.modalbg { position:absolute; left:0; top:0; width: 100%; height: 100%; background: #0b0b0b; opacity: 0.8; z-index: 499;}
+.mymodal { width: 94%; min-height: 50%; position: fixed; left: 3%; top: 10%; z-index: 500;}
+/* endblock modal */
+
+/* block tab-cmd */
+.tab-cmd{ 
+  position: relative;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  height: 44px;
+}
+.tab-cmd>button, .tab-cmd>a{
+  position: absolute;
+  width: 80px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.tab-cmd>button:first-child, .tab-cmd>a:first-child{ left: 21%; }
+.tab-cmd>button:last-child, .tab-cmd>a:first-child{ right: 21%;}
+.tab-cmd>button.open, .tab-cmd>a.open{color:red; border-color:#e23600;}
+/* endblock tab-cmd */
+
+.bottom-line{border-bottom: 1px solid #eee;}
+#info>div, #tzContent>div{ padding: 5px 15px; }
+#touzuInfo table{width: 100%;}
+#touzuInfo tr{ border-bottom: 1px solid #ccc;}
+#touzuInfo thead tr{ border-bottom: none; }
+#touzuInfo tr:last-child{ border-bottom: none; }
+#touzuInfo th{
+  text-align: center;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#touzuInfo td{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* 赛事分析 */
+span.outcircle{
+  display: block;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  line-height: 60px;
+}
+#battleVS{ position: relative; }
+#battleVS>div{display: inline-block;}
+/*#battleVS .player1, #battleVS .player2{top: 0;}*/
+#battleVS .player1{
+  position: absolute;
+  left: 12%;
+}
+#battleVS .player2{
+  position: absolute;
+  right: 12%;
+}
+#tabCMD .activeCMD{
+  border-bottom: 1px solid #e23600;
+}
+#twohistory p, #recenthistory p{margin-bottom: 0;}
+#twohistory .bottom-line{border-color: #ccc;}
+table{
+  width: 100%;
+}
+th{font-weight: normal;}
+th, td{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+select { 
+  background-color: #f2f3f5;
+  position: relative;
+  border: none;
+  outline: none;
+}

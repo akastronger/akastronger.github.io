@@ -1,0 +1,78 @@
+<style>
+    .dlg-container{ background-color: #f7f7f7; border-radius: 5px; }
+</style>
+
+<div class="dlg-container">
+    <div class="tc-dlg-header bottom-line mgB10">
+        <h1 align="center" class="x14 bold">{{game.player1}}<span class="mgH10">vs</span>{{game.player2}}</h1>
+    </div>
+    <div class="tc-dlg-body pdH10">
+        <div class="dlg-row">
+            <table class="shengpingfu">
+                <tbody>
+                    <tr ng-repeat="spf in shengpingfu">
+                        <td ng-class="{'td-lightRed': ! spf.rangqiu.num, 'td-green': spf.rangqiu.num}" ng-bind="spf.rangqiu.num"></td>
+                        <td ng-class="{active:  isInSelection(result)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, result, flag);" ng-repeat="result in spf.rangqiu.result">{{result.type}}<span class="ppoint pdL5">{{result.point}}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dlg-row">
+            <table class="bifen">
+                <tbody>
+                    <tr>
+                        <td rowspan="5" class="td-red">比分</td>
+                        <td ng-class="{active: isInSelection(win)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, win, flag);" ng-repeat="win in bifen.wins | limitTo:7">{{win.type}}<p class="ppoint">{{win.point}}</p></td>
+                    </tr>
+                    <tr>
+                        <td ng-class="{active: isInSelection(win)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, win, flag);" ng-repeat="win in bifen.wins | limitTo:-6" ng-if="$index<5">{{win.type}}<p class="ppoint">{{win.point}}</p></td>
+                        <td ng-class="{active: isInSelection(win)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, win, flag);" ng-repeat="win in bifen.wins | limitTo:-1" colspan="2">{{win.type}}<p class="ppoint">{{win.point}}</p></td>
+                    </tr>
+                    <tr>
+                        <td ng-class="{active: isInSelection(tie)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, tie, flag);" ng-repeat="tie in bifen.ties | limitTo: 4">{{tie.type}}<p class="ppoint">{{tie.point}}</p></td>
+                        <td ng-class="{active: isInSelection(tie)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, tie, flag);" ng-repeat="tie in bifen.ties | limitTo: -1" colspan="3">{{tie.type}}<p class="ppoint">{{tie.point}}</p></td>
+                    </tr>
+                    <tr>
+                        <td ng-class="{active: isInSelection(ls)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, ls, flag);" ng-repeat="ls in bifen.loss | limitTo:7">{{ls.type}}<p class="ppoint">{{ls.point}}</p></td>
+                    </tr>
+                    <tr>
+                        <td ng-class="{active: isInSelection(ls)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, ls, flag);" ng-repeat="ls in bifen.loss | limitTo:-6" ng-if="$index<5">{{ls.type}}<p class="ppoint">{{ls.point}}</p></td>
+                        <td ng-class="{active: isInSelection(ls)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, ls, flag);" ng-repeat="ls in bifen.loss | limitTo:-1" colspan="2">{{ls.type}}<p class="ppoint">{{ls.point}}</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="dlg-row">
+            <table class="zongjingqiu">
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="td-orange">总进球</td>
+                        <td ng-class="{active: isInSelection(zong)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, zong, flag);" ng-repeat="zong in zongjingqiu | limitTo:4">{{zong.type}}<p class="ppoint">{{zong.point}}</p></td>
+                    </tr> 
+                    <tr>
+                        <td ng-class="{active: isInSelection(zong)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, zong, flag);" ng-repeat="zong in zongjingqiu | limitTo:-4">{{zong.type}}<p class="ppoint">{{zong.point}}</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="dlg-row">
+            <table class="banquanchang">
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="td-darkRed">半全场</td>
+                        <td ng-class="{active: isInSelection(ban)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, ban, flag);" ng-repeat="ban in banquanchang | limitTo: 5" >{{ban.type}}<p class="ppoint">{{ban.point}}</p></td>
+                    </tr>
+                    <tr>
+                        <td ng-class="{active: isInSelection(ban)}" ng-init="flag=false" ng-click="flag=itemClick(game_index, game, ban, flag);" ng-repeat="ban in banquanchang | limitTo: -4" >{{ban.type}}<p class="ppoint">{{ban.point}}</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="tc-dlg-footer row">
+        <div class="col-xs-6 center"><a href="" ng-click="modal_hidden=true" class="dlg-btn-cancel w120">取消</a></div>
+        <div class="col-xs-6 center"><a href="" ng-click="modal_hidden=true" class="dlg-btn-ok w120">确定</a></div>
+    </div>
+</div>

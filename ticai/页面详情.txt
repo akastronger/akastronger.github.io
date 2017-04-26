@@ -1,0 +1,21 @@
+about_us.html           关于我们
+login.html              登录
+name_register.html      用户名注册
+paly.html               玩法
+password_reset.html     密码重置
+problem_feedback.html   问题反馈
+recruit.html            人才招聘
+retrieve_password.html  找回密码
+register.html           注册
+password_resetok.html   重置密码成功
+
+
+daletou_tend.html       大乐透走势图
+pailiesan_tend.html     排列三走势图
+pailiewu_tend.html      排列五走势图
+
+
+
+news.html               资讯
+news_detail.html        资讯详情
+

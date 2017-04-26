@@ -1,0 +1,13 @@
+sfc_room.html     购彩大厅
+sfc_detail.html   订单详情
+sfc_comfirmbuy.html   确认购买
+sfc_finishorder.html  完成订单
+sfc_he_pay.html       支付页面（合买）
+sfc_hefinishorder.html 完成订单（合买）
+sfc_pay.html           支付页面
+sfc_tobuy.html         发起合买
+sfc_tobuy_detail.html  合买详情
+shujufenxi.html        赛事详情分析
+rule.html              合买规则
+
+     
